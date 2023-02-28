@@ -1,4 +1,4 @@
-const API_URL = 'https://api.thecatapi.com/v1/images/search?api_key=live_hjliulG8Dxyr2ikhnseZQ70fG4DPHVlN9T2U3hxuUnkU98LhYqVKt0KrpZ3mkRde'
+const API_URL = 'https://api.thedogapi.com/v1/images/search?api_key=live_fti1EGcHFCqEDBCI4oco9zzZZGClViWfMSK8CoDHNPo0oR5ZJvKmmi4hIMHgXt22'
 const imagen = document.querySelector('img')
 const boton = document.getElementById('boton')
 
