@@ -19,13 +19,17 @@ async function fetchImage() {
 }
 
 function makeImages(amount) {
-    let foto = document.createElement('img')
-    fetchImage().then(el => foto.src = el)
-    imageWrapper.appendChild(foto)
+    let remaining = amount - imageWrapper.children.length
+    for (let i = 0; i < remaining; i++) {
+        let foto = document.createElement('img')
+        fetchImage().then(el => foto.src = el)
+        imageWrapper.appendChild(foto)
+        
+    }
+
 }
 
-number_input.addEventListener('input', (e)=>{
-    makeImages(e.target.valueAsNumber)
+boton.addEventListener('click', () => {
+    makeImages(parseInt(number_input.value))
 })
 
-makeImages(1)
