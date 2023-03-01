@@ -19,15 +19,17 @@ h1
 
 .imagecontainer
 {
-    height: 50vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
 img {
+    margin: 1em;
     object-fit: cover;
     height: inherit;
+    max-height: 200px;
     border: none;
     max-width: 100%;
     border-radius: 1em;

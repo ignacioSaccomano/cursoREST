@@ -4,14 +4,6 @@ const boton = document.getElementById('boton')
 const img = document.querySelectorAll('img')
 const number_input = document.getElementById('input-perros')
 
-// setInterval(() => {
-//     fetch(URL)
-//         .then(res => res.json())
-//         .then(data => {
-//             imagen.src = data[0].url
-//         })
-// }, 2000)
-
 async function fetchImage() {
     const resultado = await fetch(API_URL)
     const data = await resultado.json()
@@ -19,7 +11,13 @@ async function fetchImage() {
 }
 
 function makeImages(amount) {
-    let remaining = amount - imageWrapper.children.length
+    let currentPets = imageWrapper.children.length
+    let remaining = amount - currentPets
+    if(remaining < 0) {
+        for(let i = currentPets; i > amount; i--) {
+            imageWrapper.removeChild(imageWrapper.lastChild)
+        }
+    }
     for (let i = 0; i < remaining; i++) {
         let foto = document.createElement('img')
         fetchImage().then(el => foto.src = el)
@@ -33,3 +31,4 @@ boton.addEventListener('click', () => {
     makeImages(parseInt(number_input.value))
 })
 
+makeImages(1)
