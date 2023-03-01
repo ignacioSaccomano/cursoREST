@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;1,900&family=Josefin+Sans:wght@700&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Muestra de perros</title>
 </head>
 <body>
     <h1>PERROS</h1>
-    <div class="imagecontainer">
-        <img width="400px" alt="foto de perro aleatoria">
-    </div>
-    <button onclick="reload()">MAS PERROS</button>
+    <p>
+        Cuantos perros queres ver?
+    </p>
+    <input value="1" type="number" id="input-perros" min="1" max="3">
+    <figure class="imagecontainer">
+    </figure>
+    <button>MAS PERROS</button>
     <script src="main.js"></script>
 </body> 
 </html>
