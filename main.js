@@ -1,8 +1,9 @@
-const API_URL = 'https://api.thedogapi.com/v1/images/search?api_key=live_fti1EGcHFCqEDBCI4oco9zzZZGClViWfMSK8CoDHNPo0oR5ZJvKmmi4hIMHgXt22'
+const API_URL = 'https://api.thecatapi.com/v1/images/search'
+const API_KEY = 'api_key=live_hjliulG8Dxyr2ikhnseZQ70fG4DPHVlN9T2U3hxuUnkU98LhYqVKt0KrpZ3mkRde'
 const imageWrapper = document.querySelector('.imagecontainer')
 const boton = document.getElementById('boton')
 const img = document.querySelectorAll('img')
-const number_input = document.getElementById('input-perros')
+const number_input = document.getElementById('input-gatos')
 
 async function fetchImage() {
     const resultado = await fetch(API_URL)
