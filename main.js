@@ -29,7 +29,9 @@ function makeImages(amount) {
 }
 
 boton.addEventListener('click', () => {
-    makeImages(parseInt(number_input.value))
+    (number_input.value >= 1 && number_input.value <= 3) ? makeImages(parseInt(number_input.value)) : alert('El numero de fotos debe estar entre 1 y 3')
 })
+
+fetchImage().then(el => document.body.style.backgroundImage = "url('" + el + "')")
 
 makeImages(1)

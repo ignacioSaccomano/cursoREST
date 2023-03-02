@@ -1,11 +1,8 @@
 body {
-    background-color: rgb(56, 56, 121);
     font-family: 'Fira Sans', sans-serif;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background-size: cover;
+    margin: 0;
 }
 
 #input-gatos {
@@ -15,6 +12,17 @@ body {
 h1
 {
     font-size: 4em;
+}
+
+.content-wrapper {
+    background-color: rgba(0, 0, 0, 0.515);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .imagecontainer
