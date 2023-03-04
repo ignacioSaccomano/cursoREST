@@ -19,8 +19,6 @@ h1
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 
 }
@@ -43,6 +41,14 @@ img {
     border-radius: 1em;
 }
 
+.welcome-section {
+    display: inherit;
+    flex: 1;
+    flex-direction: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
 button
 {
     background-color: rgb(220, 177, 57);
@@ -53,4 +59,21 @@ button
     margin: 2em 0;
     border-radius: .2em;
     padding: 1em;
+}
+
+.footer {
+    font-family: Courier, monospace;
+    padding: 0 1em;
+
+}
+
+.footer a {
+    color: white;
+    font-weight: bold;
+    transition: color .2s;
+}
+
+.footer a:hover {
+    color: rgb(0, 166, 255);
+    cursor: pointer;
 }
