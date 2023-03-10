@@ -53,6 +53,7 @@ button
 {
     background-color: rgb(220, 177, 57);
     cursor: pointer;
+    color: black;
     width: 10em;    
     font-weight: bold;
     border: none;
@@ -63,7 +64,7 @@ button
 
 .footer {
     font-family: Courier, monospace;
-    padding: 0 1em;
+    padding: 10px 1em;
 
 }
 
